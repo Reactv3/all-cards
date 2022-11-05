@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+
+.card{
+    position: relative;
+    width: 380px;
+    height: 550px;
+    background-color: white;
+}
+
+.card .lines{
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+
+.content{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.content img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.content .username{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(67,209,209);
+}
+
+.content .title{
+    color: white;
+}
+
+.services{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.services .title{
+    font-size: 20px;
+}
+
+
+.services ul{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.services ul li{
+    padding: 5px;
+}
+
+.services ul li:nth-child(odd){
+    color: rgb(37,233,132);
+}
+
+.services ul li:nth-child(even){
+    color: rgb(89,174,235);
+}
+
